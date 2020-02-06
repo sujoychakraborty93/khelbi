@@ -1,0 +1,934 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  font-size: 0.9em;
+  padding-top: 85px;
+  background-color: #dee1e4;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+/* @media (min-width: 992px) {
+  .inlineChild {
+    flex: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+} */
+
+/* Main Home Page */
+
+/* .mainHome {
+  margin-top: -85px;
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("./images/back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+} */
+
+/*  */
+header.masthead {
+  padding-top: 10vh;
+  /* padding-bottom: calc(10rem - 72px); */
+  margin-top: -2rem;
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("./images/back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.homeBtn-box {
+  color: black;
+}
+.openReqSec {
+  background-color: #d4cfcf;
+  width: 100%;
+  min-height: 80vh;
+}
+.homeBtn {
+  padding: 1.25rem 2.25rem;
+  margin: 0 2vw;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50%;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #fff;
+  background-color: #f4623a;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-decoration: none;
+}
+
+.homeBtn:hover {
+  color: #fff;
+  background-color: #f24516;
+  border-color: #ee3e0d;
+  text-decoration: none;
+}
+
+header.masthead h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    /* height: 100vh; */
+    /* min-height: 40rem; */
+    padding-top: 10vh;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+}
+
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #f4623a;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75);
+}
+.font-weight-light {
+  font-weight: 300 !important;
+}
+/* .mb-5, .my-5 {
+  margin-bottom: 3rem!important;
+} */
+
+/* main home page ends here */
+/* login page */
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.75rem;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: -85px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: cursive;
+}
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url("./images/ghora3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 700;
+  text-align: center;
+  font-family: cursive;
+}
+
+.login-h {
+  margin-top: 6rem;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  border-radius: 2rem;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label,
+.form-label-group > select {
+  padding: var(--input-padding-y) var(--input-padding-x);
+  height: auto;
+  border-radius: 2rem;
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  cursor: text;
+  /* Match the input under the label */
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
+/* login page ends here */
+
+.navbar-nav > li {
+  border-right: 1px solid #9b9b9b;
+}
+
+.navbar-nav > li:last-child {
+  border: none;
+}
+
+/* navbartop -> dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 11rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 0.9rem;
+  color: rgb(200, 200, 200);
+  text-align: left;
+  list-style: none;
+  background-color: rgb(52, 58, 64);
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+/* navbartop -> dropdown menu -> item */
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #bcbfc2;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+/* navbartop -> dropdown menu -> item */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #545b62;
+}
+/* navbartop -> dropdown menu -> item */
+dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #373e46;
+}
+
+/* navbartop */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+/* navbartop */
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* navbar ends here */
+
+/* ************************** */
+table {
+  background-color: #ffffff;
+  border-radius: 3vh;
+}
+
+.table-sm th,
+.table-sm td {
+  padding: 0.6rem;
+}
+
+/* table css */
+/* table row -> td */
+.trTbl td {
+  font-size: 1em;
+  width: 25vw;
+}
+
+/* add button and filter button  */
+.add-filter-btn {
+  display: flex;
+}
+/* table row item link */
+/* .tdLink */
+table > tbody > tr > td > a {
+  cursor: default;
+  color: inherit;
+  text-decoration: none;
+}
+table > tbody > tr > td > a:hover {
+  cursor: default;
+  color: inherit;
+  text-decoration: none;
+}
+
+.tdLink {
+  font-weight: 600;
+}
+.tdLink:hover {
+  cursor: pointer;
+  color: rgb(12, 145, 123);
+}
+
+/* edit and delete buttons on each table */
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 0.3rem 0.2rem 0.4rem 0.2rem;
+  font-size: 0.875rem;
+  line-height: 0.8;
+  border-radius: 0.1rem;
+}
+
+/* teamPage -> add new team modal -> select multiple players */
+.custom-select[multiple],
+.custom-select[size]:not([size="1"]) {
+  height: 40vh;
+  padding-right: 0.75rem;
+  background-image: none;
+}
+
+/* put asterisk againt required fields in add, edit modal */
+.formRequired .labelRequired:after {
+  content: "*";
+  color: red;
+}
+
+/* add, edit modal select input dropdown option divider */
+.optionCls {
+  background-color: gray;
+  font-size: 0.01rem;
+}
+
+/* paragraph to proode hint tips for add, edit modal questions */
+.hintPara {
+  color: gray;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: oblique;
+  font-size: small;
+  margin: auto;
+  line-height: 1.3;
+}
+
+/* delete modal paragraph to show details of team/match to be deleted */
+.modalPara {
+  margin-top: 1.5em;
+}
+.modalParaHeadSpan {
+  font-weight: bold;
+}
+.modalParaDataSpan {
+  color: #75787a;
+}
+
+/* error message on validation of fields in add, edit, delete modals  */
+.validationMsg {
+  margin: 1vh auto auto 2vh;
+  color: red;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: oblique;
+  font-size: small;
+  line-height: 3vh;
+}
+
+/* textarea description */
+textarea.form-control {
+  height: 25vh;
+}
+
+/* button to skip to top of page */
+.topBtn {
+  position: fixed;
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 2.5vh;
+  top: 75vh;
+  left: 96em;
+  background-color: rgb(27, 200, 206);
+  color: #373e46;
+  z-index: 1000;
+}
+
+/* player details table  */
+.inlineParent {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .inlineChild {
+    flex: 100%;
+  }
+}
+.inlineChild {
+  /* display: inline-block; */
+  /* width: 50%; */
+  flex: 50%;
+  text-align: center;
+}
+.playerImage {
+  height: 50vh;
+  width: 50vh;
+}
+.playerDetailsTbl table {
+  /* margin: 0 auto; */
+  /* table-layout: auto; */
+  /* border: 1px solid rgb(189, 188, 188); */
+  /* width: 50%; */
+  color: #212529;
+}
+.playerDetailsTbl th {
+  /* background-color: rgb(125, 189, 189); */
+  border-right: 1px solid #c7c6c6;
+  text-align: right;
+}
+.playerDetailsTbl td {
+  text-align: left;
+}
+.playerDetailsTbl td,
+.playerDetailsTbl th {
+  /* border: 1px solid rgb(141, 138, 138); */
+  border-bottom: 1px solid rgb(224, 222, 222);
+  /* border-right: 1px solid rgb(224, 222, 222); */
+  vertical-align: middle;
+  padding: 1vh;
+}
+.playerDetailsTbl tr:hover {
+  background-color: #f5f5f5;
+}
+/* stripped table */
+/* .playerDetailsTbl tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+/* ====================================        FILE UPLOAD    ====================================== */
+
+.files input {
+  outline: 2px dashed #92b0b3;
+  outline-offset: -10px;
+  -webkit-transition: outline-offset 0.15s ease-in-out,
+    background-color 0.15s linear;
+  transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  padding: 120px 0px 85px 35%;
+  text-align: center !important;
+  margin: 0;
+  width: 100% !important;
+}
+.files input:focus {
+  outline: 2px dashed #92b0b3;
+  outline-offset: -10px;
+  -webkit-transition: outline-offset 0.15s ease-in-out,
+    background-color 0.15s linear;
+  transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  border: 1px solid #92b0b3;
+}
+.files {
+  position: relative;
+}
+.files:after {
+  pointer-events: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 50px;
+  right: 0;
+  height: 56px;
+  content: "";
+  background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+  display: block;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.color input {
+  background-color: #f1f1f1;
+}
+.files:before {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  right: 0;
+  height: 57px;
+  content: " or drag it here. ";
+  display: block;
+  margin: 0 auto;
+  color: #2ea591;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+/* ====================================        NAVFOOTER      ====================================== */
+/* navbar footer inherited jumbotron class*/
+.jumbotron {
+  margin-bottom: 0px;
+  width: 100%;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* navbar footer */
+.navFoot {
+  /* margin: auto; */
+  font-weight: bolder;
+  text-decoration: none;
+  /* display: flex; */
+  color: #9b9b9b;
+  text-align: right;
+  border-right: 2px solid gray;
+}
+.navFoot > a {
+  color: #cac5c5;
+  display: inline-block;
+}
+.navFoot > a:hover {
+  color: #555555;
+}
+/* navbar footer icons */
+.iconCls {
+  color: rgba(200, 200, 200, 0.9);
+  font-size: 1.5em;
+  margin: 4px;
+  text-align: left;
+}
+.navFootGroup {
+  flex: 50%;
+}
+@media screen and (max-width: 768px) {
+  .navFootGroup {
+    flex: 100%;
+    font-size: 0.7em;
+    /* display: flex; */
+    text-align: center;
+  }
+  .nav-link {
+    padding: 0.3em;
+  }
+  .navFoot {
+    border-right: none;
+  }
+}
+
+/* navFooter ends */
+
+/* body -> container div i.e. main div having table (just below navbartop)   */
+.container {
+  min-height: 90vh;
+  padding-bottom: 3vh;
+}
+
+/* body -> container div -> header */
+.pageHead {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* add, edit, delete modals */
+.modal-content {
+  line-height: 0.5;
+}
+
+/* add, edit, delete modal -> form  */
+/* add, edit, delete modal -> custom select for multiple player select  */
+.form-control,
+.custom-select {
+  height: calc(1.2em + 0.75rem + 1px);
+  padding: 0.175rem 0.55rem 0.275rem 0.55rem;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.form-group > label {
+  display: flex;
+  margin-bottom: 1vh;
+}
+
+.form-group > label > p {
+  margin-bottom: 0;
+}
+
+/* request overview page */
+.requestOverviewChild {
+  width: 33%;
+}
+
+/* request page table- all request,  my request */
+.disp-div {
+  border-top: 1px solid rgb(150, 149, 149);
+  padding: 2vmin 4vmin;
+  background-color: #ffffff;
+  margin-bottom: 4vh;
+  border-radius: 3vh;
+}
+.disp-div-requestor {
+  width: 4vw;
+}
+
+.disp-div-photo {
+  margin-top: 2vh;
+  width: 3vw;
+  height: 6vh;
+  border-radius: 50%;
+  background-color: aquamarine;
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .disp-div-photo {
+    width: 7vw;
+    height: 7vh;
+  }
+}
+.disp-div-row {
+  border-bottom: 1px solid rgb(221, 220, 220);
+  margin-left: 1vw;
+  padding: 1vmin 1vmin 1vmin 0;
+  width: 100%;
+}
+.disp-div-row:last-child {
+  border-bottom: none;
+}
+.disp-div-row-col {
+  border-right: 1px solid rgb(224, 222, 222);
+}
+.disp-div-row-col:last-child {
+  border-right: none;
+}
+
+.disp-div .nav-link {
+  color: #16181b;
+  width: 100%;
+}
+
+.disp-div .nav-link:hover,
+.disp-div .nav-link:focus {
+  color: #737374;
+}
+.title {
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border-right: none;
+}
+.sportType {
+  color: rgb(32, 102, 182);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col,
+.col-auto,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm,
+.col-sm-auto,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md,
+.col-md-auto,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg,
+.col-lg-auto,
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 2vw;
+  padding-left: 1vw;
+}
+.commentId,
+.comments button {
+  margin-right: 0.5vw;
+}
+.commentId {
+  height: 4vh;
+}
+textarea.form-control {
+  height: 4vh;
+}
+.comments button {
+  max-height: 4vh;
+  border-radius: 1vh;
+}
+
+/* request details table */
+.requestDetailTbl {
+  /* margin: 0 auto; */
+  /* width: 50vw; */
+  background-color: white;
+}
+
+.reqDetTbl {
+  padding-top: 2vh;
+}
+.tr {
+  display: flex;
+}
+.th {
+  font-weight: 700;
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  .th {
+    width: 15%;
+  }
+}
+.td,
+.tr {
+  padding: 1vh 2vw;
+}
+
+.commentRowTd {
+  padding: 0 2vw !important;
+}
+.disp-comment {
+  margin-bottom: 4vh;
+}
+.disp-div-comment {
+  background-color: rgb(240, 236, 228);
+  border-radius: 2vw;
+  margin: 0 auto;
+  padding: 1vh 1vw;
+  width: 60%;
+}
+.disp-div-action {
+  margin: 0 auto;
+  width: 60%;
+}
+.commentRequestor {
+  width: 80%;
+}
+.commentDate {
+  font-size: 0.7rem;
+  font-style: oblique;
+  /* margin: auto; */
+  /* margin-left: 2vw; */
+  width: 20%;
+  text-align: right;
+}
+.editCommentInput {
+  border: 1px solid grey;
+  border-radius: 1vh;
+  /* width: 40%; */
+}
+
+/* ====================================                    ===================================== */
+/* ===================================  GENERAL CLASSNAMES  ========================================= */
+/* ====================================                    ==================================== */
+
+/* div in add, edit, delete modal to squeeze label and hint in a line */
+.inLine {
+  display: inline-block;
+}
+.dispFlex {
+  display: flex;
+}
+.displayBlock {
+  display: block;
+}
+.displayNone {
+  display: none;
+}
+/* color red */
+.colorRed {
+  color: red;
+}
+.colorBlue {
+  color: rgb(24, 94, 224);
+}
+.bold {
+  font-weight: 800;
+}
+.textAlignRight {
+  text-align: right;
+}
+.textAlignCenter {
+  text-align: center;
+}
+.floatRight {
+  float: right;
+}
+.borderBottom {
+  border-bottom: 1px double gray;
+  width: 80%;
+}
+.displayFlex {
+  display: flex;
+}
+.transparentButton {
+  background-color: transparent;
+  border: none;
+}
+.fontSmall {
+  font-size: small;
+}

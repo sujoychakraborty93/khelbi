@@ -1,0 +1,2 @@
+getTeamUsingQuery(query)
+get team details using query parameters in rest api
